@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+#landing-carousel {
+    @apply lg:h-[82vh];
+}
+
+.carousel__viewport {
+    @apply h-full;
+}
+
+#video-player {
+    background-image: url('/assets/img/video-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.divider {
+    border-width: 0.5px;
+    @apply border-gray-100;
+}
+
+section.carousel {
+    @apply px-0;
+}
+
+section, footer {
+    @apply md:px-10 sm:px-6 xs:px-6;
+}
+
+/* ----------------------------------------------------------------------------------------------------
+    Table
+---------------------------------------------------------------------------------------------------- */
+.table-responsive {
+   @apply w-full shadow-md md:overflow-scroll sm:overflow-scroll xs:overflow-scroll;
+}
+
+table {
+    @apply w-full;
+}
+
+table tr:first-child th:first-child {
+    @apply rounded-tl-lg;
+}
+
+table tr:first-child th:last-child {
+    @apply rounded-tr-lg;
+}
+
+table th {
+    @apply bg-primary-700 text-white font-normal px-10 py-4 text-left;
+}
+
+table tbody tr {
+    @apply border-b border-gray-200;
+    vertical-align: middle;
+}
+
+table td {
+    @apply font-normal px-10 py-4 text-left;
+}
+
+/* ----------------------------------------------------------------------------------------------------
+    Tiny MCE
+---------------------------------------------------------------------------------------------------- */
+.tox-statusbar__branding {
+    @apply hidden;
+}
+
+/* ----------------------------------------------------------------------------------------------------
+    Content
+---------------------------------------------------------------------------------------------------- */
+
+#content h1 {
+    @apply text-3xl font-bold;
+}
+
+#content h2 {
+    @apply text-2xl font-bold;
+}
+
+#content h3 {
+    @apply text-xl font-bold;
+}
+
+#content h4 {
+    @apply text-lg font-bold;
+}
+
+#content h5 {
+    @apply text-base font-bold;
+}
+
+#content h6 {
+    @apply text-sm font-bold;
+}
+
+#content strong {
+    @apply font-semibold;
+}
+
+#content h1, #content h2, 
+#content h3, #content h4, 
+#content h5, #content h6, 
+#content div, #content p, 
+#content ul, #content ol, 
+#content blockquote {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#content blockquote {
+    @apply ml-6 pl-4 border-l-2 border-gray-500;
+}
